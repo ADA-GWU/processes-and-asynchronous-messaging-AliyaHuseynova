@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres
-    container_name: my-postgres-container
+    container_name: ALIYA-container
     environment:
       POSTGRES_PASSWORD: dist_pass_123
       POSTGRES_USER: dist_user
