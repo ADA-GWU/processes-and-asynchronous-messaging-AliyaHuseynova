@@ -9,4 +9,4 @@ services:
       POSTGRES_USER: dist_user
       POSTGRES_DB: mydatabase
     ports:
-      - "5432:5432"
+      - "5433:5432"
