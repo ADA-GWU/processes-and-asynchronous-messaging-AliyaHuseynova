@@ -9,6 +9,6 @@ services:
       POSTGRES_USER: dist_user
       POSTGRES_DB: mydatabase
     ports:
-      - "5435:5432"
+      - "5432:5432"
     volumes:
       - ./new.sql:/docker-entrypoint-initdb.d/new.sql
