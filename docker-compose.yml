@@ -4,6 +4,7 @@ services:
   postgres:
     image: postgres
     container_name: ALIYA-container
+    network_mode: bridge
     environment:
       POSTGRES_PASSWORD: dist_pass_123
       POSTGRES_USER: dist_user
