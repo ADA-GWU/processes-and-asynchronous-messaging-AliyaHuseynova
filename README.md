@@ -3,12 +3,16 @@
 Configuration of of the containerized DB server
 
 1. Installation - Docker Container
-2. Create YML file with the content for my postgres container
-3. create sql file for the tables and additional SQL statements
-2. Open two Command Prompts:
-    a)first to connect to docker 
-    1. cd (directory where the folder with files is located)
-    2. docker-compose up ---> the container starts running OR it must be manually turned on VIA local application of container docker
-    b)second to enter the container via >docker exec -it ALIYA-container psql -U dist_user -d mydatabase
-
-To check the configuration details, enter the > docker exec -it ALIYA-container bash
+2. Create Docker Compose File (YML) with the configuration content of PostgreSQL container
+3. Create sql file for the tables and additional SQL statements
+4. Starting the Container:
+    a)Open command prompt and navigate to the directory containing the assignment files.
+    b)To start the container, run this:
+    "docker-compose up"
+    ALTERNATIVELY start the container manually using a Docker application
+5. Enter the PostgreSQL Database
+    a)Open new command prompt and navigate to the directory containing the assignment files
+    b)Connect to the PostgreSQL container via:
+docker exec -it ALIYA-container psql -U dist_user -d mydatabase #TABLES are already created during the setup
+6. To check the configuration details, enter the following:
+docker exec -it ALIYA-container bash
